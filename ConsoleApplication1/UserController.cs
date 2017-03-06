@@ -13,7 +13,6 @@ namespace ConsoleApplication1
         [HttpGet]
         public string GetTest()
         {
-            AccountController d = new AccountController();
             return "2";
         }
         public string GetTest1()
