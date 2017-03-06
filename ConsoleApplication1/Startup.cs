@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Http;
-
+using WebApi.Controller;
 
 namespace WindowsService1
 {
@@ -14,6 +14,7 @@ namespace WindowsService1
     {
         public void Configuration(IAppBuilder appBuilder)
         {
+            
 
             HttpConfiguration config = new HttpConfiguration();
             config.Routes.MapHttpRoute(
