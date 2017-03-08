@@ -13,6 +13,7 @@ namespace ConsoleApplication1
         [HttpGet]
         public string GetTest()
         {
+            throw new Exception("3232");
             return "2";
         }
         public string GetTest1()
@@ -20,16 +21,5 @@ namespace ConsoleApplication1
             return "1";
         }
     }
-    //public class DefaultController : ApiController
-    //{
-    //    [HttpGet]
-    //    public string GetTest()
-    //    {
-    //        return "2";
-    //    }
-    //    public string GetTest1()
-    //    {
-    //        return "1";
-    //    }
-    //}
+   
 }

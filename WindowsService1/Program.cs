@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
+using WebApi.Controller;
 
 namespace WindowsService1
 {
@@ -14,6 +16,7 @@ namespace WindowsService1
         /// </summary>
         static void Main()
         {
+            Assembly.Load("WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null");
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {

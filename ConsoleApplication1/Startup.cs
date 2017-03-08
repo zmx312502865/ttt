@@ -1,4 +1,5 @@
-﻿using Microsoft.Owin;
+﻿using Exceptionless;
+using Microsoft.Owin;
 using Owin;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,7 @@ namespace WindowsService1
                 defaults: new { id = RouteParameter.Optional }
             );
             appBuilder.UseWebApi(config);
+            Exceptionless.ExceptionlessClient.Default.RegisterWebApi(config);
             //appBuilder.Run(HandleRequest);
         }
 
